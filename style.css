@@ -1,0 +1,46 @@
+/* style.css */
+
+/* Optional: keep some general styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 16px;
+  }
+  
+  /* Optional: if you still want a container 'card' look */
+  #philgeps-container {
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Original table, but DO NOT force a fixed height on it anymore. */
+  #tblCreateNoticeS1 {
+    width: 100% !important;
+    border-collapse: collapse;
+    display: table; /* revert to standard table layout if you previously set 'block' */
+    margin-bottom: 16px; /* some spacing */
+  }
+  
+  /* (Optional) Table cells spacing */
+  #tblCreateNoticeS1 td {
+    padding: 8px;
+    vertical-align: top;
+  }
+  
+  /* -------------------------------------
+     KEY PART: Make the multiple <select> bigger
+     ------------------------------------- */
+  select.ListBox[multiple] {
+    /* Increase width and height as you like */
+    width: 300px;   /* or 400px, etc. */
+    height: 200px;  /* or more, so it’s taller */
+    font-size: 1rem;        /* if you want bigger text */
+    padding: 4px;           /* add a little padding inside */
+    box-sizing: border-box; /* ensure padding doesn't shrink the internal area */
+  }
+  
+  /* If you have single-select <select> with class 'ListBox' but no 'multiple',
+     you can target them separately (or leave them alone). */
+  
